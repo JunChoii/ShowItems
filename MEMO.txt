@@ -48,6 +48,25 @@ start over the database using neondatabase
 
 2. Setting up components in 'src'
 
+---git pushed---
+git init in the root folder
+git add .
+git status -> cool "branch master:changes to be commited"
+git commit -m "first commit"
+git remote add origin https:/github.com/JunChoii/ShowItems.git -> nothing
+git push -u origin main -> error: src refspec main does not match any, error: failed to push some refs to 'https://github.com/JunChoii/ShowItems.git'
+git push -u origin url -> invalid refspec
+git status -> "On branch master"
+        meaning project is on master branch idk why....
+git remote -v to see where I am pushing my project into
+git push -u origin master -> change the branch to push in
+PUSHED
+-----------------
+
+
 3. Setting up GridItem in components
         import Image, Link, 'db', '@/db/schema/items'
 
+
+---------------next---------------
+'db', '@/db/schema/items' not done yet in 'GridItems'
