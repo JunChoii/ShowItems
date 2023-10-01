@@ -1,0 +1,53 @@
+1. created next app project
+        by 'npx create-next-app@latest'
+
+        npm install tailwind-merge
+
+2. set up drizzle -> make drizzle.config.ts in the root folder
+        step 1: install the 'drizzle-orm' library
+                npm i drizzle-orm @neondatabase/serverless
+                npm i -D drizzle-kit
+        step 2: create a new folder called 'db' in the 'src'
+        step 3: create schema folder called 'schema' in 'db'
+        step 4: create 'items.ts' in 'schema'
+        step 5: add code in 'items.ts'
+
+3. .env.local file as same level as 'src'
+
+4. es5 to es6 in tsconfig.json
+
+5. npm install @neondatabase/serverless
+        Neon's PostgreSQL driver for JavaScript and TypeScript
+
+6. seed.ts
+
+7. Add the following in next.config.ts:
+images: {
+    domains: ['cdn.discordapp.com'],
+  }
+
+8. Add followings in package.json
+        "pg": "^8.11.3",
+
+        "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/sl4cExfL) # Full Stack Finds",
+        "main": "next.config.js",
+        "author": "",
+        "license": "ISC"
+
+        "migration:generate": "drizzle-kit generate:pg"
+        "db:push": "drizzle-kit push:pg"
+
+9. install dotenv
+
+---------------next---------------
+start over the database using neondatabase
+
+1. Starting with setting up default page.tsx
+        import Link, Image, components....
+        return them
+
+2. Setting up components in 'src'
+
+3. Setting up GridItem in components
+        import Image, Link, 'db', '@/db/schema/items'
+
